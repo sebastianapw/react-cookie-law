@@ -27,9 +27,7 @@
   ],
   "scripts": {
     "build": "./node_modules/.bin/webpack -p",
-    "test": "jest --coverage",
     "precommit": "lint-staged",
-    "prepublish": "npm test && npm run build",
     "lint": "eslint 'src/**/*.js'",
     "testCI": "npm run test && cat coverage/lcov.info | coveralls"
   },
